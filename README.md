@@ -1,1 +1,1 @@
-# week0-pbo-rc
+praktikum-pbo-rc
