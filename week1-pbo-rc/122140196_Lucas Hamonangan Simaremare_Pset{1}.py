@@ -11,7 +11,6 @@ class Character:
         print(f"{other.name} now has {other.health} HP.")
 
 def main():
-    # Create characters
     atreus = Character("Atreus", 500, 10)
     daedalus = Character("Daedalus", 750, 8)
 
@@ -22,11 +21,9 @@ def main():
         print(f"{daedalus.name}|{daedalus.health}|{daedalus.defense}|\n")
         print("1. Attack     2. Defense     3. Give up")
 
-        # Get actions from players
         atreus_action = int(input(f"{atreus.name}, Select the action: "))
         daedalus_action = int(input(f"{daedalus.name}, Select the action: "))
 
-        # Resolve actions
         if atreus_action == 1:
             atreus.attack(daedalus)
         if daedalus_action == 1:
@@ -40,7 +37,6 @@ def main():
             print(f"{atreus.name} wins!")
             break
 
-        # Check for game end
         if atreus.health <= 0 or daedalus.health <= 0:
             print("\nGame Over!")
             if atreus.health <= 0:
