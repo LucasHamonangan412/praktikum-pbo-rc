@@ -1,3 +1,5 @@
+#122140196_Lucas Hamonangan Simaremare_Pset{1}
+
 class Character:
     def __init__(self, name, health, defense):
         self.name = name
@@ -14,7 +16,6 @@ def main():
     atreus = Character("Atreus", 500, 10)
     daedalus = Character("Daedalus", 750, 8)
 
-    # Game loop
     while True:
         print(f"\nRound-1 ====================================")
         print(f"{atreus.name}|{atreus.health}|{atreus.defense}|")
